@@ -4,3 +4,5 @@ A list of framer-motion prototypes made for learning purposes. Each project woul
 
 1. IOS Gallery - [Link](https://stackblitz.com/edit/ios-gallery?file=src/App.tsx)
 2. Stagger Animation - [Link](https://stackblitz.com/edit/stagger-animation-plxity?file=src/App.tsx)
+3. Parallax Animation - [Link](https://stackblitz.com/edit/parallax-effect-plxity?file=src/App.tsx)
+4. Bottom Navigation Animation - [Link](https://stackblitz.com/edit/parallax-effect-plxity?file=src/App.tsx)
