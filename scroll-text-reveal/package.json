@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@heroicons/react": "^2.0.16",
     "framer-motion": "^10.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
