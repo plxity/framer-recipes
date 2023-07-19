@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  /* background: rgb(8, 8, 8); */
+  padding: 20%;
+}
+
+.main-container {
+  display: flex;
+  height: 500px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.option-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
