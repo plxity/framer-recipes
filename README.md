@@ -10,3 +10,4 @@ A list of framer-motion prototypes made for learning purposes. Each project woul
 5. Scroll Text Reveal Animation - [Link](https://stackblitz.com/edit/scroll-text-reveal-plxity?file=src%2FApp.tsx)
 6. Whatsapp Web Attachment Animation - [Link](https://stackblitz.com/edit/whatsapp-animation?file=src%2FApp.tsx)
 7. Pay now micro interactions - [Link](https://stackblitz.com/edit/pay-now-micro-interactions?file=src%2FApp.tsx)
+8. Youtube Subscribe Animation - [Link](https://stackblitz.com/edit/subscribe-button-animation?file=src%2FApp.tsx)
