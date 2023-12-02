@@ -60,8 +60,7 @@ function App() {
     };
   }, []);
 
-  const renderOptions = () => {
-    return Icons.map((Icon, i) => {
+  const renderOptions =  Icons.map((Icon, i) => {
       return (
         <motion.li
           className="mt-4 cursor-pointer"
@@ -88,7 +87,7 @@ function App() {
         <AnimatePresence>
           {isOpen && (
             <motion.ul initial="open" animate="animate" exit="close">
-              {renderOptions()}
+              {renderOptions}
             </motion.ul>
           )}
         </AnimatePresence>
