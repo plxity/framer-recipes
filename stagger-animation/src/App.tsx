@@ -1,17 +1,17 @@
-import { stagger, useAnimate, motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
-import { ListBulletIcon } from '@heroicons/react/24/outline';
+import { stagger, useAnimate, motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { ListBulletIcon } from "@heroicons/react/24/outline";
 
 const originalItems = [
   {
-    id: '1',
-    text: 'Complete side project',
+    id: "1",
+    text: "Complete side project",
     checked: false,
   },
-  { id: '2', text: 'Go to gym', checked: false },
-  { id: '3', text: 'Read books', checked: false },
-  { id: '4', text: 'Clean room', checked: false },
-  { id: '5', text: 'Buy vegetables', checked: false },
+  { id: "2", text: "Go to gym", checked: false },
+  { id: "3", text: "Read books", checked: false },
+  { id: "4", text: "Clean room", checked: false },
+  { id: "5", text: "Buy vegetables", checked: false },
 ];
 
 function App() {
@@ -29,8 +29,8 @@ function App() {
 
     if (!isEveryElementChecked) {
       animate(
-        'input',
-        { accentColor: ['inherit'] },
+        "input",
+        { accentColor: ["inherit"] },
         {
           duration: 0.4,
         }
@@ -39,16 +39,16 @@ function App() {
 
     if (isEveryElementChecked) {
       animate(
-        'input',
+        "input",
         {
           rotate: [0, -10, 0],
           scale: [1, 1.2, 1],
-          accentColor: ['default', '#16a34a'],
+          accentColor: ["default", "#16a34a"],
         },
 
         {
           duration: 0.4,
-          delay: stagger(0.07, { ease: 'easeOut' }),
+          delay: stagger(0.07, { ease: "easeOut" }),
         }
       );
     }
@@ -58,7 +58,7 @@ function App() {
     show: {
       transition: {
         delayChildren: 0,
-        when: 'beforeChildren',
+        when: "beforeChildren",
         staggerChildren: 0.3,
       },
     },
@@ -99,21 +99,21 @@ function App() {
                 animate="show"
                 exit={{ opacity: 0 }}
                 key={item.id}
-                className="flex cursor-pointer hover:bg-gray-200 bg-gray-100 mt-1 fix-height"
+                className="flex hover:bg-gray-200 bg-gray-100 mt-1 fix-height"
               >
                 <div
                   key={item.id}
-                  className={`group flex w-full cursor-pointer select-none items-center rounded p-2 text-sm font-medium transition-colors duration-300 checked:text-gray-300 ${
+                  className={`group flex w-full select-none items-center rounded p-2 text-sm font-medium transition-colors duration-300 checked:text-gray-300 ${
                     item.checked
-                      ? 'text-gray-400 line-through'
-                      : 'text-gray-800'
+                      ? "text-gray-400 line-through"
+                      : "text-gray-800"
                   }`}
                 >
                   <motion.input
                     onChange={() => handleChange(item.id)}
                     checked={item.checked}
                     type="checkbox"
-                    className="mr-4 h-4 w-4  rounded-sm border-2 border-gray-300 text-sky-600 transition-colors duration-300 focus:ring-0 focus:ring-offset-0 focus-visible:ring-2 focus-visible:ring-sky-600/50 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 group-active:border-sky-600 group-active:checked:text-sky-600/25"
+                    className="mr-4 h-4 w-4 rounded-sm border-2 border-gray-300 text-sky-600 transition-colors duration-300 focus:ring-0 focus:ring-offset-0 focus-visible:ring-2 focus-visible:ring-sky-600/50 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-100 group-active:border-sky-600 group-active:checked:text-sky-600/25 cursor-pointer"
                   />
                   {item.text}
                 </div>
